@@ -7,12 +7,12 @@
   <meta name="description" content="환율 변환기, 스네이크 게임, 홍보자동화 세 가지 프로젝트를 소개하는 포트폴리오입니다.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <span class="brand">홍서경</span>
+    <span class="brand"><i class="brand-dot" aria-hidden="true"></i>홍서경</span>
     <nav>
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
@@ -21,13 +21,58 @@
 
   <main>
     <section class="hero">
-      <p class="eyebrow">Portfolio · 2026</p>
-      <h1>작은 불편을<br>직접 만들어<br>해결합니다.</h1>
-      <p class="lead">
-        환율을 계산하는 웹페이지, 손으로 즐기는 게임,
-        가게 홍보를 대신해 주는 자동화 도구까지.
-        세 가지 프로젝트를 문제, 해결, 결과 순서로 정리했습니다.
-      </p>
+      <div class="hero-text">
+        <p class="eyebrow">Portfolio · 2026</p>
+        <h1>작은 불편을<br>직접 만들어<br><span class="grad">해결합니다.</span></h1>
+        <p class="lead">
+          환율을 계산하는 웹페이지, 손으로 즐기는 게임,
+          가게 홍보를 대신해 주는 자동화 도구까지.
+          세 가지 프로젝트를 문제, 해결, 결과 순서로 정리했습니다.
+        </p>
+      </div>
+
+      <!-- 둥둥 떠 있는 3D 데이터 블록 -->
+      <div class="stage" aria-hidden="true">
+        <svg class="stage-lines" viewBox="0 0 420 420" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="stageGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#22d3ee"/>
+              <stop offset="1" stop-color="#a78bfa"/>
+            </linearGradient>
+          </defs>
+          <path d="M110 110 L200 235" />
+          <path d="M310 90 L200 235" />
+          <path d="M200 235 L330 330" />
+          <path d="M110 110 L310 90" />
+          <circle cx="110" cy="110" r="4"/><circle cx="310" cy="90" r="4"/>
+          <circle cx="200" cy="235" r="4"/><circle cx="330" cy="330" r="4"/>
+        </svg>
+
+        <div class="cube-wrap" style="--x:110px; --y:110px; --d:0s; --c1:#38bdf8; --c2:#2563eb;">
+          <div class="cube">
+            <div class="face front"><b>HTML</b></div><div class="face right"></div>
+            <div class="face left"></div><div class="face top"></div>
+          </div>
+        </div>
+        <div class="cube-wrap" style="--x:310px; --y:90px; --d:-1.5s; --c1:#c084fc; --c2:#7c3aed;">
+          <div class="cube">
+            <div class="face front"><b>CSS</b></div><div class="face right"></div>
+            <div class="face left"></div><div class="face top"></div>
+          </div>
+        </div>
+        <div class="cube-wrap big" style="--x:200px; --y:235px; --d:-3s; --c1:#f472b6; --c2:#db2777;">
+          <div class="cube">
+            <div class="face front"><b>3</b><small>Projects</small></div><div class="face right"></div>
+            <div class="face left"></div><div class="face top"></div>
+          </div>
+        </div>
+        <div class="cube-wrap" style="--x:330px; --y:330px; --d:-4.5s; --c1:#2dd4bf; --c2:#0891b2;">
+          <div class="cube">
+            <div class="face front"><b>PY</b></div><div class="face right"></div>
+            <div class="face left"></div><div class="face top"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="projects">
@@ -36,53 +81,63 @@
         <span class="count">03 Projects</span>
       </div>
 
-      <a class="card" href="../fxconveter/index.html" data-reveal>
-        <div class="card-index">01</div>
-        <div class="card-body">
-          <p class="card-kind">Web App · Utility</p>
-          <h3>환율 변환기</h3>
-          <p class="card-summary">금액과 통화를 고르면 바로 환율을 계산해 주는 웹페이지입니다.</p>
-          <dl class="case">
-            <div><dt>Problem</dt><dd>해외 금액을 원화로 바꿀 때마다 계산기를 따로 열어야 했습니다.</dd></div>
-            <div><dt>Solution</dt><dd>실시간 환율 정보를 불러와 선택한 두 통화 사이를 바로 계산하도록 만들었습니다.</dd></div>
-            <div><dt>Result</dt><dd>한 화면에서 입력하고 결과까지 확인할 수 있습니다.</dd></div>
-          </dl>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>환율 API</li></ul>
-          <span class="card-link">프로젝트 보기 <i aria-hidden="true">→</i></span>
-        </div>
-      </a>
+      <div class="nodes">
+        <svg class="connectors" aria-hidden="true"></svg>
 
-      <a class="card" href="../Snake game/index.html" data-reveal>
-        <div class="card-index">02</div>
-        <div class="card-body">
-          <p class="card-kind">Browser Game</p>
-          <h3>스네이크 게임</h3>
-          <p class="card-summary">먹이를 먹으며 길어지는 뱀을 조종하는 고전 게임입니다.</p>
-          <dl class="case">
-            <div><dt>Problem</dt><dd>설치 없이 잠깐 즐길 수 있는 간단한 게임이 필요했습니다.</dd></div>
-            <div><dt>Solution</dt><dd>점수가 오르면 레벨이 올라 속도가 빨라지게 하고, 최고 점수는 브라우저에 저장했습니다.</dd></div>
-            <div><dt>Result</dt><dd>다시 열어도 내 최고 기록이 남아 있어 계속 도전할 수 있습니다.</dd></div>
-          </dl>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas</li></ul>
-          <span class="card-link">프로젝트 보기 <i aria-hidden="true">→</i></span>
-        </div>
-      </a>
+        <a class="card theme-blue" href="../fxconveter/index.html" data-reveal>
+          <div class="slab">
+            <div class="card-top">
+              <span class="card-index">01</span>
+              <span class="card-kind">Web App · Utility</span>
+            </div>
+            <h3>환율 변환기</h3>
+            <p class="card-summary">금액과 통화를 고르면 바로 환율을 계산해 주는 웹페이지입니다.</p>
+            <dl class="case">
+              <div><dt>Problem</dt><dd>해외 금액을 원화로 바꿀 때마다 계산기를 따로 열어야 했습니다.</dd></div>
+              <div><dt>Solution</dt><dd>실시간 환율 정보를 불러와 선택한 두 통화 사이를 바로 계산하도록 만들었습니다.</dd></div>
+              <div><dt>Result</dt><dd>한 화면에서 입력하고 결과까지 확인할 수 있습니다.</dd></div>
+            </dl>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>환율 API</li></ul>
+            <span class="card-link">프로젝트 보기 <i aria-hidden="true">→</i></span>
+          </div>
+        </a>
 
-      <a class="card" href="https://github.com/hsk1587/auto_generate_app" target="_blank" rel="noopener" data-reveal>
-        <div class="card-index">03</div>
-        <div class="card-body">
-          <p class="card-kind">Automation · Python</p>
-          <h3>홍보자동화</h3>
-          <p class="card-summary">매장 사진과 홍보 문구를 한 번에 만들어 주는 자동화 도구입니다.</p>
-          <dl class="case">
-            <div><dt>Problem</dt><dd>매주 사진을 자르고 문구를 쓰는 일이 가게 운영 시간을 잡아먹었습니다.</dd></div>
-            <div><dt>Solution</dt><dd>사진을 1080 x 1080으로 맞추고 로고를 넣은 뒤, 가게 정보로 채널별 문구를 만들었습니다.</dd></div>
-            <div><dt>Result</dt><dd>바탕화면 아이콘을 더블클릭하면 인스타그램, 블로그, 카카오톡용 결과가 완성됩니다.</dd></div>
-          </dl>
-          <ul class="tags"><li>Python</li><li>Pillow</li><li>Automation</li></ul>
-          <span class="card-link">GitHub에서 보기 <i aria-hidden="true">↗</i></span>
-        </div>
-      </a>
+        <a class="card theme-violet" href="../Snake game/index.html" data-reveal>
+          <div class="slab">
+            <div class="card-top">
+              <span class="card-index">02</span>
+              <span class="card-kind">Browser Game</span>
+            </div>
+            <h3>스네이크 게임</h3>
+            <p class="card-summary">먹이를 먹으며 길어지는 뱀을 조종하는 고전 게임입니다.</p>
+            <dl class="case">
+              <div><dt>Problem</dt><dd>설치 없이 잠깐 즐길 수 있는 간단한 게임이 필요했습니다.</dd></div>
+              <div><dt>Solution</dt><dd>점수가 오르면 레벨이 올라 속도가 빨라지게 하고, 최고 점수는 브라우저에 저장했습니다.</dd></div>
+              <div><dt>Result</dt><dd>다시 열어도 내 최고 기록이 남아 있어 계속 도전할 수 있습니다.</dd></div>
+            </dl>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas</li></ul>
+            <span class="card-link">프로젝트 보기 <i aria-hidden="true">→</i></span>
+          </div>
+        </a>
+
+        <a class="card theme-teal" href="https://github.com/hsk1587/auto_generate_app" target="_blank" rel="noopener" data-reveal>
+          <div class="slab">
+            <div class="card-top">
+              <span class="card-index">03</span>
+              <span class="card-kind">Automation · Python</span>
+            </div>
+            <h3>홍보자동화</h3>
+            <p class="card-summary">매장 사진과 홍보 문구를 한 번에 만들어 주는 자동화 도구입니다.</p>
+            <dl class="case">
+              <div><dt>Problem</dt><dd>매주 사진을 자르고 문구를 쓰는 일이 가게 운영 시간을 잡아먹었습니다.</dd></div>
+              <div><dt>Solution</dt><dd>사진을 1080 x 1080으로 맞추고 로고를 넣은 뒤, 가게 정보로 채널별 문구를 만들었습니다.</dd></div>
+              <div><dt>Result</dt><dd>바탕화면 아이콘을 더블클릭하면 인스타그램, 블로그, 카카오톡용 결과가 완성됩니다.</dd></div>
+            </dl>
+            <ul class="tags"><li>Python</li><li>Pillow</li><li>Automation</li></ul>
+            <span class="card-link">GitHub에서 보기 <i aria-hidden="true">↗</i></span>
+          </div>
+        </a>
+      </div>
     </section>
 
     <section id="about" class="about">
