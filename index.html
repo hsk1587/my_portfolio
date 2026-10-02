@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍서경 포트폴리오</title>
+  <meta name="description" content="환율 변환기, 스네이크 게임, 홍보자동화 세 가지 프로젝트를 소개하는 포트폴리오입니다.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <span class="brand">홍서경</span>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Portfolio · 2026</p>
+      <h1>작은 불편을<br>직접 만들어<br>해결합니다.</h1>
+      <p class="lead">
+        환율을 계산하는 웹페이지, 손으로 즐기는 게임,
+        가게 홍보를 대신해 주는 자동화 도구까지.
+        세 가지 프로젝트를 문제, 해결, 결과 순서로 정리했습니다.
+      </p>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="section-head">
+        <h2>Selected Work</h2>
+        <span class="count">03 Projects</span>
+      </div>
+
+      <a class="card" href="../fxconveter/index.html" data-reveal>
+        <div class="card-index">01</div>
+        <div class="card-body">
+          <p class="card-kind">Web App · Utility</p>
+          <h3>환율 변환기</h3>
+          <p class="card-summary">금액과 통화를 고르면 바로 환율을 계산해 주는 웹페이지입니다.</p>
+          <dl class="case">
+            <div><dt>Problem</dt><dd>해외 금액을 원화로 바꿀 때마다 계산기를 따로 열어야 했습니다.</dd></div>
+            <div><dt>Solution</dt><dd>실시간 환율 정보를 불러와 선택한 두 통화 사이를 바로 계산하도록 만들었습니다.</dd></div>
+            <div><dt>Result</dt><dd>한 화면에서 입력하고 결과까지 확인할 수 있습니다.</dd></div>
+          </dl>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>환율 API</li></ul>
+          <span class="card-link">프로젝트 보기 <i aria-hidden="true">→</i></span>
+        </div>
+      </a>
+
+      <a class="card" href="../Snake game/index.html" data-reveal>
+        <div class="card-index">02</div>
+        <div class="card-body">
+          <p class="card-kind">Browser Game</p>
+          <h3>스네이크 게임</h3>
+          <p class="card-summary">먹이를 먹으며 길어지는 뱀을 조종하는 고전 게임입니다.</p>
+          <dl class="case">
+            <div><dt>Problem</dt><dd>설치 없이 잠깐 즐길 수 있는 간단한 게임이 필요했습니다.</dd></div>
+            <div><dt>Solution</dt><dd>점수가 오르면 레벨이 올라 속도가 빨라지게 하고, 최고 점수는 브라우저에 저장했습니다.</dd></div>
+            <div><dt>Result</dt><dd>다시 열어도 내 최고 기록이 남아 있어 계속 도전할 수 있습니다.</dd></div>
+          </dl>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas</li></ul>
+          <span class="card-link">프로젝트 보기 <i aria-hidden="true">→</i></span>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/hsk1587/auto_generate_app" target="_blank" rel="noopener" data-reveal>
+        <div class="card-index">03</div>
+        <div class="card-body">
+          <p class="card-kind">Automation · Python</p>
+          <h3>홍보자동화</h3>
+          <p class="card-summary">매장 사진과 홍보 문구를 한 번에 만들어 주는 자동화 도구입니다.</p>
+          <dl class="case">
+            <div><dt>Problem</dt><dd>매주 사진을 자르고 문구를 쓰는 일이 가게 운영 시간을 잡아먹었습니다.</dd></div>
+            <div><dt>Solution</dt><dd>사진을 1080 x 1080으로 맞추고 로고를 넣은 뒤, 가게 정보로 채널별 문구를 만들었습니다.</dd></div>
+            <div><dt>Result</dt><dd>바탕화면 아이콘을 더블클릭하면 인스타그램, 블로그, 카카오톡용 결과가 완성됩니다.</dd></div>
+          </dl>
+          <ul class="tags"><li>Python</li><li>Pillow</li><li>Automation</li></ul>
+          <span class="card-link">GitHub에서 보기 <i aria-hidden="true">↗</i></span>
+        </div>
+      </a>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>
+        개발 경험이 없는 상태에서 Claude와 함께 하나씩 만들며 배우고 있습니다.
+        직접 쓰는 사람의 불편에서 출발해, 쉽게 쓸 수 있는 결과물을 만드는 것을 중요하게 생각합니다.
+      </p>
+      <a class="mail" href="mailto:hsk1587@gmail.com">hsk1587@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2026 홍서경</footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
